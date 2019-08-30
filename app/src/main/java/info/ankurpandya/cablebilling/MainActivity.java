@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
         btnQr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showMessage("Qr Scan Success");
+                startLoading();
             }
         });
     }
 
-    private void showMessage(String message) {
+    private void startLoading() {
         StringRequest stringRequest = new StringRequest(
                 Request.Method.GET,
                 url,
